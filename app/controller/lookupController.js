@@ -3,7 +3,7 @@ const Order = require("../models/ordersModel");
 
 
 class LookUpController{
-    // 👉 1. Fetch all users with their orders.
+   
     async q1(req, res){
         try {
             const data = await User.aggregate([
@@ -13,7 +13,7 @@ class LookUpController{
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
     }
 
-    // 👉 2. Get all orders with user details (name, email).
+
     async q2(req, res){
         try {
             const data = await Order.aggregate([
@@ -23,7 +23,7 @@ class LookUpController{
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
     }
 
-    // 👉 3. Find users who have placed at least one order.
+
     async q3(req, res){
         try {
             const data = await User.aggregate([
@@ -34,7 +34,7 @@ class LookUpController{
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
     }
 
-    // 👉 4. Find users who have never placed any order.
+
     async q4(req, res){
         try {
             const data = await User.aggregate([
@@ -45,7 +45,7 @@ class LookUpController{
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
     }
 
-    // 👉 5. Fetch orders along with their order items.
+
     async q5(req, res){
         try {
             const data = await Order.aggregate([
@@ -55,7 +55,7 @@ class LookUpController{
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
     }
 
-    // 👉 6. Get order details with product information.
+
     async q6(req, res){
         try {
             const data = await Order.aggregate([
@@ -65,7 +65,6 @@ class LookUpController{
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
     }
 
-    // 👉 7. Fetch full order summary: user info, products, total amount.
     async q7(req, res){
         try {
             const data = await Order.aggregate([
@@ -77,7 +76,7 @@ class LookUpController{
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
     }
 
-    // 👉 8. Join orders with payments and show payment status.
+
     async q8(req, res){
         try {
             const data = await Order.aggregate([
@@ -88,7 +87,7 @@ class LookUpController{
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
     }
 
-    // 👉 9. Find orders where payment is not completed.
+
     async q9(req, res){
         try {
             const data = await Order.aggregate([
@@ -100,7 +99,7 @@ class LookUpController{
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
     }
 
-    // 👉 10. Fetch users with their latest order only.
+
     async q10(req, res){
         try {
             const data = await User.aggregate([
@@ -112,7 +111,7 @@ class LookUpController{
 
 
 
-    // 👉 21. Join users and orders → calculate total spending per user.
+
    
 }
 

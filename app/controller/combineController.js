@@ -6,7 +6,7 @@ const Product = require("../models/productsModel");
 
 
 class CombineController{
-     // 👉 21. Join users and orders → calculate total spending per user.
+
      async q21(req, res){
         try {
             const data = await Order.aggregate([
@@ -18,7 +18,7 @@ class CombineController{
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
     }
 
-    // 👉 22. Find users who spent more than ₹50,000.
+
     async q22(req, res){
         try {
             const data = await Order.aggregate([
@@ -31,7 +31,7 @@ class CombineController{
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
     }
 
-    // 👉 23. Get top-selling products.
+
     async q23(req, res){
         try {
             const data = await OrderItem.aggregate([
@@ -45,7 +45,7 @@ class CombineController{
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
     }
 
-    // 👉 24. Find average order value per category.
+
     async q24(req, res){
         try {
             const data = await OrderItem.aggregate([
@@ -59,7 +59,7 @@ class CombineController{
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
     }
 
-    // 👉 25. Get total revenue per user with user details.
+
     async q25(req, res){
         try {
             const data = await Order.aggregate([
@@ -71,7 +71,7 @@ class CombineController{
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
     }
 
-    // 👉 26. Find users who placed more than 3 orders.
+
     async q26(req, res){
         try {
             const data = await Order.aggregate([
@@ -84,7 +84,7 @@ class CombineController{
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
     }
 
-    // 👉 27. Get daily revenue report.
+
     async q27(req, res){
         try {
             const data = await Order.aggregate([
@@ -95,7 +95,7 @@ class CombineController{
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
     }
 
-    // 👉 28. Join orders + payments → calculate total paid amount.
+
     async q28(req, res){
         try {
             const data = await Payment.aggregate([
@@ -108,7 +108,7 @@ class CombineController{
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
     }
 
-    // 👉 29. Find products that were never ordered.
+
     async q29(req, res){
         try {
             const data = await Product.aggregate([
@@ -119,7 +119,7 @@ class CombineController{
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
     }
 
-    // 👉 30. Build a dashboard using $facet
+
     async q30(req, res){
         try {
             const data = await User.aggregate([

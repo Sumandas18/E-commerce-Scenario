@@ -3,7 +3,7 @@ const Order = require("../models/ordersModel");
 const OrderItem = require("../models/orderItemsModel");
 
 class GroupController{
-        // 👉 11. Calculate total revenue from all orders.
+
         async q11(req, res){
             try {
                 const data = await Order.aggregate([
@@ -13,7 +13,7 @@ class GroupController{
             } catch (error) { res.status(500).json({success: false, message: error.message}); }
         }
     
-        // 👉 12. Count total number of orders per user.
+
         async q12(req, res){
             try {
                 const data = await Order.aggregate([
@@ -23,7 +23,7 @@ class GroupController{
             } catch (error) { res.status(500).json({success: false, message: error.message}); }
         }
     
-        // 👉 13. Find average order value per user.
+
         async q13(req, res){
             try {
                 const data = await Order.aggregate([
@@ -33,7 +33,7 @@ class GroupController{
             } catch (error) { res.status(500).json({success: false, message: error.message}); }
         }
     
-        // 👉 14. Get maximum order amount.
+
         async q14(req, res){
             try {
                 const data = await Order.aggregate([
@@ -43,7 +43,7 @@ class GroupController{
             } catch (error) { res.status(500).json({success: false, message: error.message}); }
         }
     
-        // 👉 15. Group orders by status and count them.
+
         async q15(req, res){
             try {
                 const data = await Order.aggregate([
@@ -53,7 +53,7 @@ class GroupController{
             } catch (error) { res.status(500).json({success: false, message: error.message}); }
         }
     
-        // 👉 16. Calculate monthly revenue.
+
         async q16(req, res){
             try {
                 const data = await Order.aggregate([
@@ -64,7 +64,7 @@ class GroupController{
             } catch (error) { res.status(500).json({success: false, message: error.message}); }
         }
     
-        // 👉 17. Find top 5 users based on total spending.
+
         async q17(req, res){
             try {
                 const data = await Order.aggregate([
@@ -78,7 +78,7 @@ class GroupController{
             } catch (error) { res.status(500).json({success: false, message: error.message}); }
         }
     
-        // 👉 18. Count products sold per category.
+
         async q18(req, res){
             try {
                 const data = await OrderItem.aggregate([
@@ -90,7 +90,7 @@ class GroupController{
             } catch (error) { res.status(500).json({success: false, message: error.message}); }
         }
     
-        // 👉 19. Find duplicate users based on email.
+
         async q19(req, res){
             try {
                 const data = await User.aggregate([
@@ -101,7 +101,7 @@ class GroupController{
             } catch (error) { res.status(500).json({success: false, message: error.message}); }
         }
     
-        // 👉 20. Get total quantity sold per product.
+
         async q20(req, res){
             try {
                 const data = await OrderItem.aggregate([
