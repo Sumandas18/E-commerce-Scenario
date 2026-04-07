@@ -1,0 +1,677 @@
+{
+  "info": {
+    "_postman_id": "e950bb0f-db70-44cf-93aa-821cb83c6143",
+    "name": "E-commerce_Scenario",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50989381",
+    "_collection_link": "https://go.postman.co/collection/50989381-e950bb0f-db70-44cf-93aa-821cb83c6143?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Lookup",
+      "item": [
+        {
+          "name": "Fetch all users with their orders.",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/lookup/q1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "lookup",
+                "q1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get all orders with user details (name, email).",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/lookup/q2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "lookup",
+                "q2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Find users who have placed at least one order.",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/lookup/q3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "lookup",
+                "q3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": " Find users who have never placed any order.",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/lookup/q4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "lookup",
+                "q4"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Fetch orders along with their order items.",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/lookup/q5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "lookup",
+                "q5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Fetch full order summary (user info, products, total amount).",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/lookup/q7",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "lookup",
+                "q7"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get order details with product information.",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/lookup/q6",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "lookup",
+                "q6"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Join orders with payments and show payment status.",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/lookup/q8",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "lookup",
+                "q8"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Find orders where payment is not completed.",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/lookup/q9",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "lookup",
+                "q9"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Fetch users with their latest order only.",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/lookup/q10",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "lookup",
+                "q10"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Group",
+      "item": [
+        {
+          "name": "Calculate total revenue from all orders.",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/group/q11",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "group",
+                "q11"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Count total number of orders per user.",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/group/q12",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "group",
+                "q12"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Find average order value per user.",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/group/q13",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "group",
+                "q13"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get maximum order amount.",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/group/q14",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "group",
+                "q14"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Group orders by status and count them.",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/group/q15",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "group",
+                "q15"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Calculate monthly revenue.",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/group/q16",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "group",
+                "q16"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Find top 5 users based on total spending.",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/group/q17",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "group",
+                "q17"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Count products sold per category.",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/group/q18",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "group",
+                "q18"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Find duplicate users based on email.",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/group/q19",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "group",
+                "q19"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get total quantity sold per product.",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/group/q20",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "group",
+                "q20"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Combine",
+      "item": [
+        {
+          "name": "Join users and orders → calculate total spending per user.",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/combine/q21",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "combine",
+                "q21"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Find users who spent more than ₹50,000.",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/combine/q22",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "combine",
+                "q22"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get top-selling products.",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/combine/q23",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "combine",
+                "q23"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Find average order value per category.",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/combine/q24",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "combine",
+                "q24"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get total revenue per user with user details.",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/combine/q25",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "combine",
+                "q25"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Find users who placed more than 3 orders.",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/combine/q26",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "combine",
+                "q26"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get daily revenue report.",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/combine/q27",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "combine",
+                "q27"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Join orders + payments → calculate total paid amount.",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/combine/q28",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "combine",
+                "q28"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/combine/q29",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/combine/q29",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "combine",
+                "q29"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Build a dashboard using $facet (total users, total orders, total revenue, top user).",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:4002/combine/q30",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "4002",
+              "path": [
+                "combine",
+                "q30"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
