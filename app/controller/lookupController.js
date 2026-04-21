@@ -17,7 +17,9 @@ class LookUpController{
     async q2(req, res){
         try {
             const data = await Order.aggregate([
-                { $lookup: { from: "users", localField: "userId", foreignField: "_id", as: "user" } }
+                { $lookup: { from: "users", localField: "userId", foreignField: "_id", as: "user" } },
+                { $unwind: "$user" },
+                { $project: { _id: 1, userId: 1, totalAmount: 1, status: 1, createdAt: 1, "user.name": 1, "user.email": 1 } }
             ]);
             res.status(200).json({success: true, data});
         } catch (error) { res.status(500).json({success: false, message: error.message}); }
